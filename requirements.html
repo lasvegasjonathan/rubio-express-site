@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rubio Express | Requirements</title>
+
+  <!-- Bootstrap CSS styles the navigation and page layout. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER: logo, navigation, and the top Apply button. -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light header-inner" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">
+        <img class="brand-logo" src="assets/rubio-logo.png" alt="">
+        <span class="brand-copy">
+          <span class="brand-name">Rubio Express</span>
+          <span class="brand-tagline">Construction Careers &amp; Apprenticeships</span>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#mainNavigation" aria-controls="mainNavigation"
+              aria-expanded="false" aria-label="Open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <!-- links to pages from other XD artboards. -->
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="apprenticeship.html">Apprenticeship</a></li>
+          <li class="nav-item"><a class="nav-link" href="requirements.html">Requirements</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="sign-in.html">Sign In</a></li>
+          <li class="nav-item">
+            <a class="header-apply" href="apply.html">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="requirements-page">
+
+  <!-- 1. Page introduction -->
+  <section class="requirements-intro" aria-labelledby="requirements-title">
+    <div class="page-width">
+      <p class="requirements-kicker">PREPARE FOR YOUR NEXT STEP</p>
+
+      <h1 id="requirements-title">Requirements &amp; Expectations</h1>
+
+      <p>
+        Learn what to expect when joining our crews and what information to
+        have ready before applying.
+      </p>
+
+      <!-- The artboards use slightly different wording for desktop and phone. -->
+      <p class="d-none d-md-block">
+        Requirements vary by position and project. Our team can explain what
+        applies to your opportunity.
+      </p>
+
+      <p class="d-md-none">
+        Requirements may vary by position and project. Our team can explain
+        what applies to your opportunity.
+      </p>
+
+      <hr class="requirements-divider">
+    </div>
+  </section>
+
+  <!-- 2. Crew expectations: three columns on desktop. -->
+  <section class="requirements-values" aria-labelledby="crew-title">
+    <div class="page-width">
+      <h2 id="crew-title">Working with our crews</h2>
+
+      <div class="row">
+        <div class="col-md-4 requirements-expectation-column">
+          <article class="requirements-item">
+            <h3>Dependability</h3>
+            <p>Arrive on time and communicate changes in your availability.</p>
+          </article>
+        </div>
+
+        <div class="col-md-4 requirements-expectation-column">
+          <article class="requirements-item">
+            <h3>Safety</h3>
+            <p>
+              Follow jobsite instructions, use required protective equipment,
+              and ask questions when you need guidance.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-4 requirements-expectation-column">
+          <article class="requirements-item">
+            <h3>Teamwork</h3>
+            <p>Work respectfully with your crew and communicate clearly.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Grey panel with information for apprenticeship applicants. -->
+  <section class="requirements-applicants" aria-labelledby="applicants-title">
+    <div class="page-width">
+      <h2 id="applicants-title">Apprenticeship applicants</h2>
+
+      <div class="row">
+        <div class="col-md-6 requirements-applicant-column">
+          <article class="requirements-path">
+            <h3>New to the trade</h3>
+            <p>
+              Ask about the entry requirements for available apprenticeship
+              opportunities. Be prepared to attend classes and learn through
+              supervised job experience.
+            </p>
+            <p>
+              Tell us about your interest in construction and the skills you
+              want to develop.
+            </p>
+          </article>
+        </div>
+
+        <div class="col-md-6 requirements-applicant-column">
+          <article class="requirements-path">
+            <h3>Bringing experience</h3>
+            <p>
+              Share your current apprenticeship program, completed classes,
+              relevant credentials, and field experience.
+            </p>
+            <p>
+              Ask how your previous training may fit available opportunities.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Travel and preparation: two columns on desktop. -->
+  <div class="page-width requirements-details">
+    <div class="row">
+      <section
+        class="col-md-6 requirements-detail-column requirements-travel"
+        aria-labelledby="travel-title">
+        <h2 id="travel-title">Travel and availability</h2>
+        <p>
+          Some opportunities involve travel. Let us know your availability and
+          ask about the project location, work schedule, and room and board
+          compensation arrangements.
+        </p>
+      </section>
+
+      <section
+        class="col-md-6 requirements-detail-column requirements-ready"
+        aria-labelledby="ready-title">
+        <h2 id="ready-title">What to have ready</h2>
+        <p>
+          When you're ready to take the next step, be sure to have current
+          contact information, relevant work experience, training or
+          certifications you already hold, and your availability dates to
+          start work and travel.
+        </p>
+      </section>
+    </div>
+
+    <!-- 5. Divider and closing contact prompt. -->
+    <hr class="requirements-divider">
+
+    <section class="requirements-contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Not sure whether you qualify?</h2>
+
+      <p class="d-none d-md-block">
+        Tell us about your background and interests. Our team can explain the
+        requirements for available opportunities.
+      </p>
+
+      <p class="d-md-none">
+        Talk with our team about current openings, trainings, and your next step.
+      </p>
+
+      <a class="requirements-contact-link" href="contact.html">
+        Contact our team
+      </a>
+    </section>
+  </div>
+
+</main>
+
+  <!-- PAGE FOOTER: brand, links, application prompt, and legal links. -->
+  <footer class="site-footer">
+    <div class="page-width">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img class="footer-logo" src="assets/rubio-logo.png" alt="">
+          <div>
+            <h2>Rubio Express</h2>
+            <p>Construction Careers &amp; Apprenticeships</p>
+            <p class="footer-description">Construction opportunities, travel, and hands-on training</p>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Explore">
+          <h2>Explore</h2>
+          <a href="about.html">About Us</a>
+          <a href="requirements.html">Requirements</a>
+          <a href="apprenticeship.html">Apprenticeship</a>
+        </nav>
+
+        <nav class="footer-links" aria-label="Applicant support">
+          <h2>Applicant Support</h2>
+          <a href="contact.html">Contact Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="sign-in.html">Sign In</a>
+        </nav>
+
+        <div class="footer-cta">
+          <p>Ready to join the crew?</p>
+          <a class="button button-orange" href="apply.html">Apply Now <span aria-hidden="true">&gt;</span></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">2026 Rubio Express. All rights reserved.</p>
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 4 scripts for the responsive navigation button -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+          crossorigin="anonymous"></script>
+</body>
+</html>

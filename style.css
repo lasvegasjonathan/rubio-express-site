@@ -1,0 +1,1055 @@
+/* COLORS taken from the Rubio Express Home artboard in XD. */
+:root {
+  --rubio-blue: #003f88;
+  --rubio-green: #00803f;
+  --rubio-orange: #ff9f1c;
+  --light-gray: #f3f5f7;
+  --dark-text: #111111;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--dark-text);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #111111;
+  outline-offset: 3px;
+}
+
+.page-width {
+  width: calc(100% - 96px);
+  max-width: 1270px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* HEADER */
+.site-header {
+  border: 1px solid #707070;
+  background: #ffffff;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1366px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding: 0 4px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-right: 18px;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.brand-logo {
+  width: 115px;
+  height: 58px;
+  margin-right: -22px;
+  object-fit: cover;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  color: var(--rubio-blue);
+  line-height: 1.15;
+}
+
+.brand-name {
+  font-size: 24px;
+}
+
+.brand-tagline {
+  font-size: 13px;
+}
+
+.site-header .navbar-nav .nav-link {
+  padding: 10px 11px;
+  color: var(--rubio-blue);
+  font-size: 15px;
+}
+
+.site-header .navbar-nav .nav-link {
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-header .navbar-nav .nav-link:hover,
+.site-header .navbar-nav .nav-link:focus {
+  color: var(--rubio-green);
+  background-color: #e8f5e9;
+  text-decoration: none;
+}
+
+.header-apply {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 11px 20px;
+  border: 1px solid #707070;
+  background: var(--rubio-orange);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-apply:hover,
+.button-orange:hover {
+  background: #ed8e0d;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* HERO / BODY */
+.hero {
+  padding: 31px 0 38px;
+  background: #ffffff;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-copy {
+  padding-top: 8px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--rubio-green);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  color: var(--rubio-blue);
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 0.98;
+}
+
+.hero-description {
+  max-width: 560px;
+  margin: 24px 0 24px 10px;
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-left: 40px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 17px;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-orange {
+  min-width: 207px;
+  border: 1px solid #707070;
+  background: var(--rubio-orange);
+  color: #ffffff;
+}
+
+.button-outline {
+  min-width: 248px;
+  border: 1px solid var(--rubio-blue);
+  background: #ffffff;
+  color: var(--rubio-blue);
+}
+
+.button-outline:hover {
+  background: #edf3fa;
+  color: var(--rubio-blue);
+  text-decoration: none;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 697 / 410;
+  border-radius: 27px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* THREE BENEFITS */
+.benefits-band {
+  padding: 40px 0;
+  border-top: 1px solid #707070;
+  background: var(--light-gray);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.benefit-card {
+  display: grid;
+  min-height: 132px;
+  grid-template-columns: 55px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 20px;
+  border: 1px solid #d4d8dc;
+  background: #ffffff;
+}
+
+.benefit-icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eef3f8;
+  color: var(--rubio-blue);
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.benefit-card h2 {
+  margin: 0 0 10px;
+  color: var(--rubio-blue);
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.benefit-card p {
+  margin: 0;
+  color: var(--rubio-blue);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 26px 0 12px;
+  background: var(--rubio-blue);
+  color: #ffffff;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  min-height: 168px;
+}
+
+.footer-brand {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 78px;
+  height: 70px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.footer-brand h2 {
+  margin: 0 0 2px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.footer-brand p,
+.footer-cta p {
+  margin: 0 0 9px;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.footer-brand .footer-description {
+  max-width: 285px;
+  margin-top: 10px;
+}
+
+.footer-links h2,
+.footer-cta p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-links a {
+  display: block;
+  width: fit-content;
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.footer-cta .button {
+  min-width: 177px;
+  min-height: 43px;
+  font-size: 17px;
+}
+
+.footer-bottom {
+  display: flex;
+  min-height: 32px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* PHONE LAYOUT */
+@media (max-width: 992.98px) {
+  .header-inner {
+    padding: 0 10px;
+  }
+
+  .site-header .navbar-collapse {
+    padding: 8px 0 14px;
+  }
+
+  .site-header .navbar-nav .nav-link {
+    padding: 8px 0;
+  }
+
+  .header-apply {
+    margin: 8px 0 0;
+  }
+
+  .page-width {
+    width: calc(100% - 40px);
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .hero-copy {
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 19px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-inner {
+    min-height: 58px;
+  }
+
+  .brand {
+    margin-right: auto;
+  }
+
+  .brand-logo {
+    width: 52px;
+    height: 49px;
+    margin-right: -8px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .brand-tagline {
+    font-size: 8px;
+  }
+
+  .page-width {
+    width: calc(100% - 28px);
+  }
+
+  .hero {
+    padding: 18px 0 24px;
+  }
+
+  .eyebrow {
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+    line-height: 1.04;
+  }
+
+  .hero-description {
+    margin: 18px 0;
+    font-size: 18px;
+    line-height: 1.35;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 2px;
+  }
+
+  .button {
+    min-height: 42px;
+    font-size: 16px;
+  }
+
+  .hero-actions .button-orange {
+    min-width: 128px;
+  }
+
+  .hero-actions .button-outline {
+    min-width: 220px;
+  }
+
+  .hero-photo img {
+    aspect-ratio: 365 / 174;
+    border-radius: 24px;
+  }
+
+  .benefits-band {
+    padding: 22px 0;
+  }
+
+  .benefit-card {
+    min-height: 128px;
+    grid-template-columns: 48px 1fr;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .benefit-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 25px;
+  }
+
+  .benefit-card h2 {
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+
+  .benefit-card p {
+    font-size: 14px;
+  }
+
+  .site-footer {
+    padding: 18px 0 10px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    min-height: 0;
+  }
+
+  .footer-logo {
+    width: 70px;
+    height: 62px;
+  }
+
+  .footer-brand h2 {
+    font-size: 22px;
+  }
+
+  .footer-brand p,
+  .footer-cta p {
+    font-size: 13px;
+  }
+
+  /* The phone artboard keeps the footer brand and Apply button, not the link columns. */
+  .footer-links {
+    display: none;
+  }
+
+  .footer-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .footer-cta p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .footer-cta .button {
+    min-width: 150px;
+    min-height: 40px;
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+
+  .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+
+  .footer-bottom a:first-of-type {
+    text-align: left;
+  }
+
+  .footer-bottom a:last-of-type {
+    text-align: right;
+  }
+}
+
+.about-intro {
+  padding: 50px 0 36px;
+}
+
+.about-eyebrow {
+  margin: 0 0 4px;
+  color: var(--rubio-green);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.about-title {
+  margin: 0 0 20px;
+  color: var(--rubio-blue);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.about-description {
+  margin: 0 0 16px;
+  font-size: 23px;
+  line-height: 1.35;
+}
+
+.about-quote {
+  margin: 20px 0 0;
+  color: var(--rubio-blue);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.about-quote span {
+  display: block;
+  margin-left: 72px;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 658 / 366;
+  border-radius: 26px;
+  object-fit: cover;
+}
+
+.about-caption {
+  margin: 16px 0 0;
+  font-size: 23px;
+  font-style: italic;
+}
+
+.about-highlights {
+  padding: 26px 0;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  background: var(--light-gray);
+}
+
+.about-highlight {
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px;
+}
+
+.about-icon {
+  color: var(--rubio-blue);
+  font-family: "Material Symbols Outlined";
+  font-size: 48px;
+  line-height: 1;
+}
+
+.about-highlight p {
+  margin: 0;
+  color: var(--rubio-blue);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.phone-period {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .about-intro {
+    padding: 18px 0 24px;
+  }
+
+  .about-title {
+    font-size: 31px;
+  }
+
+  .about-description {
+    font-size: 19px;
+  }
+
+  .about-quote {
+    margin-top: 18px;
+    font-size: 25px;
+  }
+
+  .about-quote span {
+    margin-left: 31px;
+  }
+
+  .about-photo {
+    margin-top: 16px;
+  }
+
+  .about-highlight {
+    min-height: 72px;
+    justify-content: flex-start;
+    padding: 10px 28px;
+  }
+
+  .phone-period {
+    display: inline;
+  }
+}
+
+/* Divider lines between the About highlights */
+.about-highlights .row > div + div {
+  border-left: 1px solid #707070;
+}
+
+@media (max-width: 991.98px) {
+  .about-highlights .row > div + div {
+    border-left: 0;
+    border-top: 1px solid #707070;
+  }
+}
+
+/* APPRENTICESHIP PAGE */
+.apprenticeship-page {
+  color: #26334a;
+}
+
+/* Introduction */
+.apprenticeship-intro {
+  padding: 54px 0 40px;
+}
+
+.apprenticeship-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 640fr) minmax(0, 598fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.apprenticeship-kicker {
+  margin: 0 0 10px;
+  color: #00803f;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.apprenticeship-intro h1 {
+  margin: 0 0 20px;
+  color: #003f88;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+.apprenticeship-lead {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.apprenticeship-photo img {
+  display: block;
+  width: 100%;
+  height: 352px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Reading column and sidebar */
+.apprenticeship-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 774fr) minmax(0, 444fr);
+  gap: 52px;
+  align-items: start;
+}
+
+.apprenticeship-divider {
+  border: 0;
+  border-top: 1px solid #d6dfea;
+  margin: 0 0 20px;
+}
+
+.apprenticeship-topic h2 {
+  margin: 0 0 18px;
+  color: #003f88;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.apprenticeship-topic p,
+.apprenticeship-topic li,
+.apprenticeship-sidebar p {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.apprenticeship-topic p {
+  margin: 0 0 12px;
+}
+
+.apprenticeship-topic ul {
+  margin: 0 0 12px;
+  padding-left: 22px;
+}
+
+.apprenticeship-topic.divided-topic {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid #d6dfea;
+}
+
+.apprenticeship-sidebar {
+  min-height: 1088px;
+  padding: 44px 32px;
+  border-radius: 12px;
+  background: #f3f5f7;
+}
+
+.apprenticeship-sidebar h2 {
+  margin: 0 0 18px;
+  color: #003f88;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.apprenticeship-sidebar p {
+  margin: 0 0 14px;
+}
+
+.apprenticeship-sidebar .apprenticeship-divider {
+  margin: 28px 0;
+}
+
+.apprenticeship-contact {
+  color: #003f88;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+/* Closing section */
+.apprenticeship-next-step {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  align-items: start;
+  margin-top: 32px;
+  padding: 19px 0 18px;
+  border-top: 1px solid #d6dfea;
+}
+
+.apprenticeship-next-step h2 {
+  margin: 0 0 12px;
+  color: #003f88;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.apprenticeship-next-step p {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.apprenticeship-next-step > div > a {
+  color: #003f88;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.apprenticeship-button {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  border-radius: 8px;
+  background: #ff9f1c;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.apprenticeship-button:hover {
+  background: #ed8e0d;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* On smaller screens, put the columns one under another. */
+@media (max-width: 991.98px) {
+  .apprenticeship-intro {
+    padding: 30px 0;
+  }
+
+  .apprenticeship-intro-grid,
+  .apprenticeship-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .apprenticeship-intro h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .apprenticeship-photo img {
+    height: 300px;
+  }
+
+  .apprenticeship-sidebar {
+    min-height: 0;
+  }
+
+  .apprenticeship-next-step {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .apprenticeship-button {
+    width: 100%;
+    max-width: 340px;
+    margin-top: 0;
+  }
+}
+
+/* Smaller phone adjustments */
+@media (max-width: 575.98px) {
+  .apprenticeship-intro h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .apprenticeship-kicker {
+    font-size: 18px;
+  }
+
+  .apprenticeship-lead,
+  .apprenticeship-topic p,
+  .apprenticeship-topic li,
+  .apprenticeship-sidebar p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .apprenticeship-topic h2,
+  .apprenticeship-next-step h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .apprenticeship-sidebar h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .apprenticeship-photo img {
+    height: 220px;
+  }
+}
+
+/* Requirements page text colors from the artboard. */
+.requirements-page {
+  color: #000000;
+}
+
+.requirements-page h1,
+.requirements-page h2,
+.requirements-page h3 {
+  color: var(--rubio-blue);
+}
+
+.requirements-kicker {
+  color: var(--rubio-green);
+}
+
+/* Horizontal divider lines. */
+.requirements-divider {
+  width: calc(100% - 10px);
+  margin: 30px auto;
+  border: 0;
+  border-top: 1.5px solid #707070;
+}
+
+/* Three desktop expectation columns. */
+.requirements-expectation-column {
+  padding: 20px 28px;
+}
+
+.requirements-expectation-column:not(:last-child) {
+  border-right: 1px solid #707070;
+}
+
+/* Applicant panel: XD uses a pale gray fill and rounded border. */
+.requirements-applicants {
+  width: calc(100% - 74px);
+  max-width: 1292px;
+  margin: 32px auto;
+  padding: 28px 0;
+  border: 1px solid #707070;
+  border-radius: 22px;
+  background: #e6ecf0;
+}
+
+.requirements-applicants .page-width {
+  width: calc(100% - 32px);
+  max-width: none;
+}
+
+.requirements-applicant-column {
+  padding: 8px 22px;
+}
+
+.requirements-applicant-column + .requirements-applicant-column,
+.requirements-ready {
+  border-left: 1px solid #707070;
+}
+
+.requirements-detail-column {
+  padding: 12px 24px;
+}
+
+/* Contact link is blue and underlined in the XD artboard. */
+.requirements-contact-link {
+  color: #1b94f1;
+  text-decoration: underline;
+}
+
+/* Phone layout: Bootstrap stacks the columns; change dividers to match XD. */
+@media (max-width: 767.98px) {
+  .requirements-divider {
+    width: 100%;
+    margin: 22px auto;
+  }
+
+  .requirements-expectation-column {
+    padding: 18px 12px 24px;
+    border-right: 0 !important;
+  }
+
+  .requirements-expectation-column:not(:last-child) {
+    border-bottom: 1px solid #707070;
+  }
+
+  .requirements-applicants {
+    width: 100%;
+    margin: 20px auto;
+    padding: 24px 0;
+    border-radius: 14px;
+  }
+
+  .requirements-applicants .page-width {
+    width: calc(100% - 26px);
+  }
+
+  .requirements-applicant-column + .requirements-applicant-column,
+  .requirements-ready {
+    border-left: 0;
+  }
+
+  .requirements-detail-column {
+    padding: 12px 4px;
+  }
+}

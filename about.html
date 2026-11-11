@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rubio Express | About</title>
+
+  <!-- Bootstrap CSS styles the navigation and page layout. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&amp;icon_names=calendar_month,groups,solar_power&amp;display=block">
+	
+  <!-- HEADER: logo, navigation, and the top Apply button. -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light header-inner" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="index.html">
+        <img class="brand-logo" src="assets/rubio-logo.png" alt="">
+        <span class="brand-copy">
+          <span class="brand-name">Rubio Express</span>
+          <span class="brand-tagline">Construction Careers &amp; Apprenticeships</span>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#mainNavigation" aria-controls="mainNavigation"
+              aria-expanded="false" aria-label="Open navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <!-- links to pages from other XD artboards. -->
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="apprenticeship.html">Apprenticeship</a></li>
+          <li class="nav-item"><a class="nav-link" href="requirements.html">Requirements</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="sign-in.html">Sign In</a></li>
+          <li class="nav-item">
+            <a class="header-apply" href="apply.html">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+ <main>
+  <section class="about-intro" aria-labelledby="about-title">
+    <div class="page-width">
+      <div class="row">
+
+        <!-- Text comes first on phone; Bootstrap moves it right on desktop. -->
+        <div class="col-lg-6 about-copy order-lg-2">
+          <p class="about-eyebrow">About Rubio Express</p>
+
+          <h1 class="about-title" id="about-title">
+            Built By A Tradesman<br>
+            Who Started On The Crew<span class="phone-period">.</span>
+          </h1>
+
+          <p class="about-description">
+            Founded in 2017 by Rudy Ramirez Rubio, Rubio Fencing LLC is a
+            family-built subcontractor known for reliable crews, dependable
+            schedules, and quality that holds up.
+          </p>
+
+          <p class="about-description">
+            With roughly 1,000 completed projects—from 5,000 to over 200,000
+            linear feet across commercial and renewable energy work—and a
+            network of family-run contractors to scale on demand, the standard
+            stays the same:
+          </p>
+
+          <p class="about-quote">
+            “Do it right. Deliver on time.
+            <span>Earn the next opportunity.”</span>
+          </p>
+        </div>
+
+        <!-- This appears on the left on desktop, below the text on phone. -->
+        <div class="col-lg-6 about-photo order-lg-1">
+          <img src="assets/rubio-crew.png.png"
+               alt="Rubio Express crew after completing a row of solar panels">
+
+          <p class="about-caption d-none d-lg-block">
+            *One of our Rubio Express crews after completing a row of solar panels
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about-highlights" aria-label="About Rubio Express highlights">
+    <div class="page-width">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="about-highlight">
+            <span class="about-icon" aria-hidden="true">calendar_month</span>
+            <p>Founded in 2017</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="about-highlight">
+            <span class="about-icon" aria-hidden="true">solar_power</span>
+            <p>Commercial &amp; Renewable Energy</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="about-highlight">
+            <span class="about-icon" aria-hidden="true">groups</span>
+            <p>Hands-On Apprenticeship</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- PAGE FOOTER: brand, links, application prompt, and legal links. -->
+  <footer class="site-footer">
+    <div class="page-width">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img class="footer-logo" src="assets/rubio-logo.png" alt="">
+          <div>
+            <h2>Rubio Express</h2>
+            <p>Construction Careers &amp; Apprenticeships</p>
+            <p class="footer-description">Construction opportunities, travel, and hands-on training</p>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Explore">
+          <h2>Explore</h2>
+          <a href="about.html">About Us</a>
+          <a href="requirements.html">Requirements</a>
+          <a href="apprenticeship.html">Apprenticeship</a>
+        </nav>
+
+        <nav class="footer-links" aria-label="Applicant support">
+          <h2>Applicant Support</h2>
+          <a href="contact.html">Contact Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="sign-in.html">Sign In</a>
+        </nav>
+
+        <div class="footer-cta">
+          <p>Ready to join the crew?</p>
+          <a class="button button-orange" href="apply.html">Apply Now <span aria-hidden="true">&gt;</span></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">2026 Rubio Express. All rights reserved.</p>
+        <a href="terms.html">Terms of Use</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 4 scripts for the responsive navigation button -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+          crossorigin="anonymous"></script>
+</body>
+</html>
